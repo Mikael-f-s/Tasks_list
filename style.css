@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #444;
+}
+
+input {
+    background-color: #eee;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 30px #ccc;
+}
+
+nav {
+    max-width: 900px;
+    width: 90svw;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:space-between;
+}
+
+#searchTask {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 900px;
+    width: 90svw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#addTasks {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 40px;
+    box-shadow: 0 5px 20px #ccc;
+    padding: 20px;
+}
+
+#addTasks h1 {
+    width: 100%;
+    height: 20%;
+}
+
+#addTasks form {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#addTasks form div {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.newItemParameters {
+    background-color: #eee;
+    display: block;
+    width: 45%;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#submitNewTask {
+    width: 100%;
+    background-color: blue;
+    color: #eee;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+#tasks {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 40px;
+    box-shadow: 0 5px 20px #ccc;
+    padding: 20px;
+}
+
+#tasks h1 {
+    width: 100%;
+    height: 20%;
+}
+
+#taskList {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.taskListItem {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 30px 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.taskListItem div {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.taskListItem div span {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+
+.taskListItem div p {
+    margin-left: 10px;
+}
+
+.taskUrgent {
+    background-color: red;
+}
+
+.taskPriority {
+    background-color: yellow;
+}
+
+.taskNormal {
+    background-color: green;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    box-shadow: 0 5px 20px #ccc;
+    padding: 20px;
+    font-weight: 100;
+    font-size: 12px;
+}

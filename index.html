@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Task's</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <figure>
+                <img src="./logo.jpg" alt="My Task's">
+            </figure>
+            <div>
+                <input type="search" name="searchTask" id="searchTask" placeholder="Pesquisar tarefa">
+                <input type="button" id="switchMode">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="addTasks">
+            <h1>Inserir tarefa</h1>
+            <form>
+                <div>
+                    <input class="newItemParameters" type="text" name="newTask" id="newTask" placeholder="Digitar título da terefa">
+                    <select class="newItemParameters" name="priority" id="priority">
+                        <option value="">Selecione a prioridade</option>
+                        <option value="Urgente">Urgente</option>
+                        <option value="Prioritário">Prioritário</option>
+                        <option value="Normal">Normal</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" id="submitNewTask" value="Adicionar Tarefa na Lista">
+                </div>
+            </form>
+        </section>
+        <section id="tasks">
+            <h1>Tarefas</h1>
+            <div id="taskList">                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Developed by mikaelsfernandes98@gmail.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
